@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slipknot - Projeto</title>
+        <link rel="stylesheet" href="GLITCH.css">
+        <link rel="icon" href="832fa4f4985dbcb7ebce9217842fbc0a-removebg-preview.ico" type="image/x-icon">
+        <style>
+          body {
+              font-family: 'Arial', sans-serif;
+              margin: 0;
+              padding: 0;
+          }
+  
+          #menu {
+              width: 250px;
+              height: 100%;
+              background-color: #000000;
+              position: fixed;
+              left: -250px;
+              transition: left 0.3s ease;
+          }
+  
+          #menu ul {
+              list-style: none;
+              padding: 20px;
+          }
+  
+          #menu ul li {
+              padding: 10px;
+              color: white;
+              cursor: pointer;
+          }
+  
+          #menu-button {
+              position: fixed;
+              left: 20px;
+              top: 20px;
+              cursor: pointer;
+              color: white;
+              font-size: 20px;
+          }
+          #menu-button:hover {
+            color: red;
+          }
+          #menu ul li:hover {
+            color: red;
+          }
+          #menu :hover {
+            color: red;
+          }
+          a:hover, a:active {
+          color: red;
+          }
+          :link, a:visited {
+          color: inherit; 
+          text-decoration: none;
+          }
+      </style>
+        <div class="container">
+            <p class="glitch">
+              <span aria-hidden="true">SLIPKNOT</span>
+              SLIPKNOT 
+              <span aria-hidden="true">SLIPKNOT</span>
+            </p>
+            <hr>
+          </div>
+            
+    </head>
+    <body>
+      <div id="menu">
+        <ul>
+            <li style="color: white; text-align: left; font-size: 30px;" class="zaam">Historia</li>
+            <li id="submenu" style="color: white; text-align: left; font-size: 30px;"class="zaam">Discografia</li>
+            <div id="submenu">
+              <ul id="item2" style="text-align: left; font-size: 20px;">
+                <li> <a href="1album.html" target="_blank" style="text-decoration: none;"class="zaam2">Slipknot</a> </li>
+                <li> <a href="2album.html" target="_blank" style="text-decoration: none;"class="zaam2">Iowa </a></li>
+                <li> <a href="3album.html" target="_blank" style="text-decoration: none;"class="zaam2">Vol.3 : (The Subliminal Verses)</a></li>
+                <li> <a href="4album.html" target="_blank" style="text-decoration: none;"class="zaam2">All Hope is Gone</a></li>
+                <li> <a href="5album.html" target="_blank" style="text-decoration: none;"class="zaam2">The Gray Chapter</a></li>
+                <li> <a href="6album.html" target="_blank" style="text-decoration: none;"class="zaam2">We are Not Your Kind</a></li>
+                <li> <a href="7album.html" target="_blank" style="text-decoration: none;"class="zaam2">The End, So Far</a></li>
+              </ul>
+            </div>
+            <li style="color: white; text-align: left; font-size: 30px;"> <a href="corey.html" target="_blank" style="text-decoration: none; color: inherit;"class="zaam">Membros</a></li>
+            <li style="color: white; text-align: left; font-size: 30px;"class="zaam">Momentos Iconicos</li>
+        </ul>
+    </div>
+    <div id="menu-button" style="font-size: 35px;">&#9776;</div>
+    <script>
+      var item2 = document.getElementById('item2');
+      item2.style.display = 'none';
+      var submenu = document.getElementById('submenu');
+      var menu = document.getElementById('menu');
+      document.getElementById('menu-button').addEventListener('click', function() {
+          if (menu.style.left === "0px") {
+              menu.style.left = "-250px";
+          } else {
+              menu.style.left = "0px";
+          }
+      });
+      submenu.addEventListener('click', function() {
+          if (item2.style.display === 'block') {
+              item2.style.display = 'none';
+          } else {
+              item2.style.display = 'block';
+          }
+      });
+  </script>
+      <div style="text-align: center;">
+        <h1>Historia</h1>
+      </div>
+      <center>
+      <div style="font-size: 18px;font-style:oblique;" class="texto" >
+        <br>
+  Slipknot é uma banda norte-americana de nu metal.<br> O grupo se destacou pela caracterização dos integrantes que se apresentam trajados com máscaras e macacões industriais.<br>
+  O Slipknot foi criado no estado de “Iowa”, Estados Unidos, no ano de 1995. Além de se apresentarem mascarados, se destacam também por suas músicas sombrias, raivosas e melancólicas.<br>
+  O primeiro álbum da banda intitulado “Slipknot” foi lançado em 1999. Com os singles “Walt and Bleed” e “Spit it Out” e com a realização de grandes shows, o grupo ganhou importante espaço na mídia. Em 2000 o álbum recebeu disco de platina. <br>
+  Em 2001 foi lançado “Iowa” e em 2004 “Vol.3:The Subliminal Verses”, considerado por muitos como o melhor trabalho do grupo. <br>
+  Em 2008 o grupo lançou o álbum “All Hope is Gone”, que ficou em primeiro lugar na Billboard 200. A banda realizou shows na Austrália, Japão e Europa. Em 2010, o baixista Paul Gray, foi encontrado morto em um quarto de hotel. <br>
+  Em 2011 foi anunciado o novo integrante Donnie Steele. Nesse mesmo ano, a banda tocou em festivais na Europa e na edição brasileira do “Rock in Rio”. Em 2014 lançam o álbum de estúdio “The Gray Chapter”. <br>
+  <br>
+      </div>
+    </center>
+      <br>
+      <div>
+        <a href="https://pt.wikipedia.org/wiki/Slipknot" target="_blank"><button style="color: red; background-color: black;border: 0; " class="sabura">Saber Mais...</button></a>
+      </div>
+      <br>
+      <div>
+        <h1>Discografia</h1>
+      </div>
+      <br>
+      <div class="zoom">
+        <a href="1album.html"><img src="Slipknot album.jpg" class="img" class="sabura"></a>
+        <a href="2album.html"><img src="iwoa album.jpg" class="img"></a>
+        <a href="3album.html"><img src="subnimal verse slipknot.jpg" class="img"class="sabura"></a>
+        <a href="4album.html"><img src="hope gone.jpg" class="img"class="sabura"></a>
+        <br>
+        <a href="5album.html"><img src="gray chap.jpg" class="img"class="sabura"></a>
+        <a href="6album.html"><img src="Slipknot_-_We_Are_Not_Your_Kind.png" class="img"class="sabura"></a>
+        <a href="7album.html"><img src="endfar.jpg" class="img"class="sabura"></a>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <p class="glitch">
+          <span aria-hidden="true">MEMBROS</span>
+          MEMBROS
+          <span aria-hidden="true">MEMBROS</span>
+        </p>
+        <hr width="400">
+      </div>
+      <center>
+      <div style="font-size: 18px; text-align: center;">
+        <br>
+        <center>
+        <div style="font-size: 30px" class="membros">
+        <b><a href="corey.html" target="_blank" style="text-decoration: none;"><b style="color:white;">Corey Taylor</a></b>
+        <br>
+        <br>
+        <b><a href="jimroot.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Jim Root</a></b>
+        <br>
+        <br>
+        <b><a href="mick.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Mick Thomson</a></b>
+        <br>
+        <br>
+        <b><a href="craig.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Craig Jones</a></b>
+        <br>
+        <br>
+        <b><a href="sid.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Sid Wilson</a></b>
+        <br>
+        <br>
+        <b><a href="clown.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Shawn Crahan</a></b>
+        <br>
+        <br>
+        <b><a href="jay.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Jay Weinberg</a></b>
+        <br>
+        <br>
+        <b><a href="aless.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Alessandro Venturella</a></b>
+        <br>
+        <br>
+        <b><a href="tortilla.html" target="_blank" style="text-decoration: none;"><b style="color: white;">Tortilla Man</a></b>
+        <br>
+        <a href="https://pt.wikipedia.org/wiki/Lista_de_membros_do_Slipknot" target="_blank"><b><button style="color: white; background-color: rgba(0, 0, 0, 0);border: 0; " class="sabura">Saber Mais...</button></b></a>
+      </div>
+    </center>
+    </center>
+        <br>
+        <br>
+        <div class="container">
+          <p class="glitch">
+            <span aria-hidden="true">MOMENTOS ICÓNICOS</span>
+            MOMENTOS ICÓNICOS
+            <span aria-hidden="true">MOMENTOS ICÓNICOS</span>
+          </p>
+          <hr width="900">
+        </div>
+          <br>
+        <div >
+          <br>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9PEwEpRVXME?si=U7WqM8DqT2dAj88h" title="YouTube video player"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="600" style="border:5px solid; border-radius: 10px; border-color: white; margin-left: 10px; margin-right: 10px;"></iframe>
+          <video src="y2mate.com - Slipknot  Joey Jordison Disasterpieces Drum Solo Live_480p.mp4"controls width="600" style="border:5px solid; border-radius: 10px; border-color: white;margin-left: 10px; margin-right: 10px;"></video>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QevefT9kRkY?si=g4kHGC0pb0MXdkd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:5px solid; border-radius: 10px; border-color: white;margin-bottom: 10px; margin-top: 10px;margin-left: 10px; margin-right: 10px;"></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/zanG_dPr5hg?si=jkp1nyeb9jGrWEDH" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:5px solid; border-radius: 10px; border-color: white;margin-bottom: 10px; margin-top: 10px;margin-left: 10px; margin-right: 10px;"></iframe>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <hr width="100%">
+      <div class="card">
+          <div class="posi">
+            <a href="https://www.instagram.com/slipknot/" target="_blank" style="text-align: right;"><img src="new-Instagram-logo-white-glyph.png" class="logoinsta imagem-zoom"></a>
+          </div>
+        </a>
+    </div>
+      <script>
+        window.addEventListener("scroll", function() {
+            const scrollTop = window.scrollY;
+            const body = document.body;
+            
+            if (scrollTop < 800) {
+                body.classList.add("imagem1");
+                body.classList.remove("imagem2");
+                body.classList.remove("imagem3");
+            } else if (scrollTop < 2000) {
+                body.classList.remove("imagem1");
+                body.classList.add("imagem2");
+                body.classList.remove("imagem3");
+            }
+            else {
+                body.classList.remove("imagem1");
+                body.classList.remove("imagem2");
+                body.classList.add("imagem3");
+            }
+        });
+    </script>
+    </body>
+    </html>
