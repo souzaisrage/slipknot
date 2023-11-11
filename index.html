@@ -37,7 +37,7 @@
           }
   
           #menu-button {
-              position: fixed;
+              position:fixed;
               left: 20px;
               top: 20px;
               cursor: pointer;
@@ -91,15 +91,30 @@
                 <li> <a href="7album.html" target="_blank" style="text-decoration: none;"class="zaam2">The End, So Far</a></li>
               </ul>
             </div>
-            <li style="color: white; text-align: left; font-size: 30px;"> <a href="corey.html" target="_blank" style="text-decoration: none; color: inherit;"class="zaam">Membros</a></li>
+            <li  id = "submenu2" style="color: white; text-align: left; font-size: 30px; cursor: pointer;" class="zaam">Membros</a></li>
+            <div id="submenu2">
+              <ul id="item3" style="text-align: left; font-size: 20px;">
+                <li> <a href="corey.html" target="_blank" style="text-decoration: none;"class="zaam2">Corey Taylor</a> </li>
+                <li> <a href="jay.html" target="_blank" style="text-decoration: none;"class="zaam2">Jay Weinberg </a></li>
+                <li> <a href="jimroot.html" target="_blank" style="text-decoration: none;"class="zaam2">Jim Root</a></li>
+                <li> <a href="craig.html" target="_blank" style="text-decoration: none;"class="zaam2">Craig Jones</a></li>
+                <li> <a href="sid.html" target="_blank" style="text-decoration: none;"class="zaam2">Sid Wilson</a></li>
+                <li> <a href="clown.html" target="_blank" style="text-decoration: none;"class="zaam2">Shawn Crahan</a></li>
+                <li> <a href="aless.html" target="_blank" style="text-decoration: none;"class="zaam2">Alessandro Venturella</a></li>
+                <li> <a href="tortilla.html " target="_blank" style="text-decoration: none;"class="zaam2">Tortilla Man</a></li>
+              </ul>
+            </div>
             <li style="color: white; text-align: left; font-size: 30px;"class="zaam">Momentos Iconicos</li>
         </ul>
     </div>
     <div id="menu-button" style="font-size: 35px;">&#9776;</div>
     <script>
       var item2 = document.getElementById('item2');
+      var item3 = document.getElementById('item3');
       item2.style.display = 'none';
+      item3.style.display = 'none';
       var submenu = document.getElementById('submenu');
+      var submenu2 = document.getElementById('submenu2');
       var menu = document.getElementById('menu');
       document.getElementById('menu-button').addEventListener('click', function() {
           if (menu.style.left === "0px") {
@@ -113,6 +128,13 @@
               item2.style.display = 'none';
           } else {
               item2.style.display = 'block';
+          }
+      });
+      submenu2.addEventListener('click', function() {
+          if (item3.style.display === 'block') {
+              item3.style.display = 'none';
+          } else {
+              item3.style.display = 'block';
           }
       });
   </script>
@@ -172,35 +194,7 @@
       <div style="font-size: 18px; text-align: center;">
         <br>
         <center>
-        <div style="font-size: 30px" class="membros">
-        <b><a href="corey.html" target="_blank" style="text-decoration: none;"><b style="color:white;" class="zaam2" class="passar">Corey Taylor</a></b>
-        <br>
-        <br>
-        <b><a href="jimroot.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Jim Root</a></b>
-        <br>
-        <br>
-        <b><a href="mick.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Mick Thomson</a></b>
-        <br>
-        <br>
-        <b><a href="craig.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Craig Jones</a></b>
-        <br>
-        <br>
-        <b><a href="sid.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Sid Wilson</a></b>
-        <br>
-        <br>
-        <b><a href="clown.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Shawn Crahan</a></b>
-        <br>
-        <br>
-        <b><a href="jay.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Jay Weinberg</a></b>
-        <br>
-        <br>
-        <b><a href="aless.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Alessandro Venturella</a></b>
-        <br>
-        <br>
-        <b><a href="tortilla.html" target="_blank" style="text-decoration: none;"><b style="color: white;" class="zaam2">Tortilla Man</a></b>
-        <br>
-        <a href="https://pt.wikipedia.org/wiki/Lista_de_membros_do_Slipknot" target="_blank"><b><button style="color: white; background-color: rgba(0, 0, 0, 0);border: 0; " class="sabura">Saber Mais...</button></b></a>
-      </div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Hjno1ILPiE8?si=WaiYFyNDL-vda3ue" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:5px solid; border-radius: 10px; border-color: white; margin-left: 10px; margin-right: 10px;"></iframe>
     </center>
     </center>
         <br>
@@ -256,7 +250,7 @@
                 body.classList.add("imagem1");
                 body.classList.remove("imagem2");
                 body.classList.remove("imagem3");
-            } else if (scrollTop < 2000) {
+            } else if (scrollTop < 1500) {
                 body.classList.remove("imagem1");
                 body.classList.add("imagem2");
                 body.classList.remove("imagem3");
