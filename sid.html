@@ -2,9 +2,48 @@
 <html>
     <head>
         <title></title>
+        <link rel="stylesheet" href="GLITCH.css">
     </head>
     <body bgcolor="black">
         <center><img src="sidgif.gif" width="400" class="dudes"></center>
-        Sid é o DJ da banda e traz um elemento de hip-hop e eletrônica à música do Slipknot.
+        <div>
+            <h1 class="slipfont">Sid Wilson</h1>
+        </div>
+        
+        <div style="color: white; text-align: center; font-size: 20px;">
+            Sid é o DJ da banda e traz um elemento de hip-hop e eletrônica à música do Slipknot.
+        </div>
+        <br>
+        <br>
+        <div>
+            <h1 class="slipfont">MASCARAS</h1>
+        </div>
+        <div>
+            <img id = "imagemExibida" src="sidmask1.jpg" width="450px" height="400px" style="border: 30px; border-color: white; border-radius: 10px;">
+        </div>
+        <br>
+        <button class="zaam" onclick="trocarImagem()" style="width: 120px; height: 60px;background-color: red; color: white;border:2;border-color: white; border-radius: 30px; cursor: pointer;">Proximo</button>
+        <br>
+        <br>
+        <a href="index.html"><button class="zaam" style="width: 100px; height: 50px;background-color: red; color: white;border:2;border-color: white; border-radius: 30px; cursor: pointer;">Voltar</button></a>
+        <br><br>
+        <script>
+            var imagens = [
+                "sidmask1.jpg",
+                "sidmask2.jpg",
+                "sidmask3.webp",
+                "sidmask4.jpg",
+                "sidmask5.jpg",
+                "sidmask6.jpg",
+            ];
+    
+            var imagemAtual = 0;
+            var imagemElement = document.getElementById('imagemExibida');
+    
+            function trocarImagem() {
+                imagemAtual = (imagemAtual + 1) % imagens.length;
+                imagemElement.src = imagens[imagemAtual];
+            }
+        </script>
     </body>
 </html>

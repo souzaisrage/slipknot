@@ -2,9 +2,49 @@
 <html>
     <head>
         <title></title>
+        <link rel="stylesheet" href="GLITCH.css">
     </head>
-    <body bgcolor="black">
+    <body bgcolor="black" style="color: white;">
         <center><img src="coreygif.gif" width="400" class="dudes"></center>
-        Corey é o rosto mais visível da banda, conhecido por suas habilidades vocais versáteis, alternando entre vocais melódicos e guturais.
+        <br>
+        <div>
+            <h1 class="slipfont">Corey Taylor</h1>
+        </div>
+        <div style="color: white; text-align: center; font-size: 20px;">
+            Corey é o rosto mais visível da banda, conhecido por suas habilidades vocais versáteis, alternando entre vocais melódicos e guturais.
+        </div>
+        <br>
+        <br>
+        <div>
+            <h1 class="slipfont">MASCARAS</h1>
+        </div>
+        <br><br>
+        <div>
+            <img  id="imagemExibida" src="coreymask1.jpg"  width="450px" height="400px" style="border: 30px; border-color: white; border-radius: 10px;">
+        </div> 
+        <br> 
+        <button class="zaam" onclick="trocarImagem()" style="width: 120px; height: 60px;background-color: red; color: white;border:2;border-color: white; border-radius: 30px; cursor: pointer;">Proximo</button>
+        <br>
+        <br>
+        <a href="index.html"><button class="zaam" style="width: 100px; height: 50px;background-color: red; color: white;border:2;border-color: white; border-radius: 30px; cursor: pointer;">Voltar</button></a> 
+        <br><br>
+        <script>
+            var imagens = [
+                "coreymask1.jpg",
+                "coreymask2.jpg",
+                "coreymask3.webp",
+                "coreymask4.webp",
+                "coreymask5.jpg",
+                "coreymask6.jpg",
+            ];
+    
+            var imagemAtual = 0;
+            var imagemElement = document.getElementById('imagemExibida');
+    
+            function trocarImagem() {
+                imagemAtual = (imagemAtual + 1) % imagens.length;
+                imagemElement.src = imagens[imagemAtual];
+            }
+        </script>
     </body>
 </html>
