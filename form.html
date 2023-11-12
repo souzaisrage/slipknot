@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <style>
+        .nomes{
+            color: white;
+        }
+    </style>
+    <body style="background-color: black;">
+        <br>
+        <br>
+        <center>
+        <form>
+            <fieldset style="width: 525px; background-color: black; border: 5px solid red">
+                <legend style="text-align: center; color: red;font-size: 50px;"><h3>Formulario</h3></legend>
+                <h3 style="color: white;">Quer Fazer parte do Slipknot ?</h3>
+                <h4 style="color: white;">Faça o Formulario !</h4>
+                <br>
+                <label for="nome" class="nomes">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <br>
+                <label for="idade" class="nomes">Idade:</label>
+                <br>
+                <input type="number" name="Idade" id="Idade">
+                <br><br>
+                <label class="nomes">Sexo:</label>
+                <br>
+                <div class="nomes">
+                <input type="radio" value="F" name="Sexo" > Feminino
+                <input type="radio" value="M" name="Sexo" > Masculino
+                <br>
+                <br>
+                <label for="inst" class="nomes">Qual posição voce assumiria na banda?</label>
+                <br>
+                <br>
+                <select name="inst" id="instrumento" style="background-color: black; color: white;">
+                    <option value="1">Selecione uma opção...</option>
+                    <option value="2">Vocalista</option>
+                    <option value="3">Guitarrista Solista</option>
+                    <option value="4">Guitarrista Ritmicos</option>
+                    <option value="5">Baterista</option>
+                    <option value="6">Percussionista</option>
+                    <option value="7">Samples</option>
+                    <option value="8">Teclado</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <br><br><br>
+        <a href="index.html"><button class="zaam" style="width: 100px; height: 50px;background-color: red; color: white;border:2;border-color: white; border-radius: 30px; cursor: pointer;">Voltar</button></a> 
+        
+    </center>
+    </body>
+</html>
